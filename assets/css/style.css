@@ -1,0 +1,97 @@
+
+p,h3,h4{
+    color: #FEFEFE;
+    letter-spacing: 0.25rem;
+}
+#myInfo{
+    background-image: url(/assets/images/bgimg.jpg);
+    background-size: cover;
+}
+.infoLink{
+    padding: 0;
+}
+.infoLink li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.bi{
+    font-size: 1.75rem;
+    color: white;
+    transition: 0.5s;
+    
+}
+#myInfo .bi:hover{
+    color:#FF6F61 ;
+}
+
+
+#myProjects{
+   height: 100%;
+   padding: 2rem;
+   
+}
+
+.card{
+    background-color: #FF6F61;
+}
+.card-title{
+    color:#31363B;
+}
+.card-text{
+    font-weight: bold;
+    color: #31363B;
+    letter-spacing: 0.1rem;
+}
+
+.projectLink{
+    font-weight: bold;
+    text-decoration: none;
+    color: #343a40 ;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0rem 1rem;
+    transition: 0.5s;
+    
+}
+.projectLink:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #343a40 ;
+}
+
+img{
+    height: 50px;
+}
+.cardImgs ul{
+    padding: 0;
+
+}
+.cardImgs li{
+    list-style: none;
+    display: inline-block;
+}
+
+#footer{
+    background-color: lightgrey;
+    height: 100px;
+}
+
+#footer .bi{
+    color: #343a40;
+    font-size: 2.5rem;
+}
+
+#footer .bi:hover{
+    color:  #FF6F61;;
+}
+
+#footer .infoLink{
+    padding: 0;
+}
+#footer .infoLink li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2rem;
+}
