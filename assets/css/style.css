@@ -15,11 +15,18 @@ p,h3,h4{
     display: inline-block;
     margin-right: 1.5rem;
 }
-
+.wrapped{
+    padding: 0;
+    margin: 0;
+}
+.wrapped:hover{
+    transition: 1.3s;
+    transform: rotateY(360deg);
+}
 .bi{
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: white;
-    transition: 0.5s;
+    transition: all .5s ease;
     
 }
 #myInfo .bi:hover{
