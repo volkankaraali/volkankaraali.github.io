@@ -1,109 +1,62 @@
-
-p,h3,h4{
-    color: #FEFEFE;
-    letter-spacing: 0.25rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-#myInfo{
-    background-image: url(/assets/images/bgimg.jpg);
-    background-size: cover;
+body {
+  text-align: center;
+  background-color: #495371;
+  color: white;
+  height: auto;
+  font-family: "Inter";
 }
-.infoLink{
-    padding: 0;
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
 }
-.infoLink li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 1.5rem;
-}
-.wrapped{
-    padding: 0;
-    margin: 0;
-}
-.wrapped:hover{
-    transition: 1.3s;
-    transform: rotateY(360deg);
-}
-.bi{
-    font-size: 2rem;
-    color: white;
-    transition: all .5s ease;
-    
-}
-#myInfo .bi:hover{
-    color:#FF6F61 ;
+h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-
-#myProjects{
-   height: 100%;
-   padding: 2rem;
-   
+.content {
+  padding: 10px;
+}
+.content > ul > li {
+  list-style: none;
 }
 
-.card{
-    background-color: #FF6F61;
-}
-.card-title{
-    color:#31363B;
-}
-.card-text{
-    font-weight: bold;
-    color: #31363B;
-    letter-spacing: 0.1rem;
+ul {
+  display: flex;
+  justify-content: space-around;
 }
 
-.projectLink{
-    font-weight: bold;
-    text-decoration: none;
-    color: #343a40 ;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 0rem 1rem;
-    transition: 0.5s;
-    
-}
-.projectLink:hover{
-    text-decoration: none;
-    color:white;
-    background-color: #343a40 ;
+.bi {
+  color: white;
+  font-size: 2.5rem;
 }
 
-img{
-    height: 50px;
-}
-.cardImgs ul{
-    padding: 0;
-
-}
-.cardImgs li{
-    list-style: none;
-    display: inline-block;
+.bi-linkedin:hover {
+  color: #0a66c2;
 }
 
-#footer{
-    background-color: lightgrey;
-    height: 100px;
+.bi-github:hover {
+  color: black;
+}
+.bi-envelope-fill:hover {
+  color: crimson;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-#footer .bi{
-    color: #343a40;
-    font-size: 2.5rem;
-}
-
-#footer .bi:hover{
-    color:  #FF6F61;;
-}
-
-#footer .infoLink{
-    padding: 0;
-}
-#footer .infoLink li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 2rem;
-}
-
-.note{
-    font-size: 0.6rem;
-    letter-spacing: 0px;
+@media only screen and (max-width: 425px) {
+  .main {
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
