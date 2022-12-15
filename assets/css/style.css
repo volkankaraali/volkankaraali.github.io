@@ -4,11 +4,10 @@
   padding: 0;
 }
 body {
-  text-align: center;
-  background-color: #495371;
+  background-color: #141414;
   color: white;
   height: auto;
-  font-family: "Inter";
+  font-family: "Poppins";
 }
 .main {
   display: flex;
@@ -20,43 +19,73 @@ h3 {
   font-weight: 700;
 }
 
+.text-react{
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+.text-github{
+  text-decoration: none !important;
+  cursor: pointer;
+  font-weight: bold;
+  color: orange;
+}
+.text-github:hover{
+  color:rgb(253, 183, 53)
+}
+
 .content {
   padding: 10px;
-}
-.content > ul > li {
-  list-style: none;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.bi {
+.content > ul > li {
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.link.linkedin:hover .social-media>span{
   color: white;
-  font-size: 2.5rem;
 }
 
-.bi-linkedin:hover {
-  color: #0a66c2;
+.link.github:hover .social-media>span{
+  color: white;
+}
+.link.email:hover .social-media>span{
+  color: white;
 }
 
-.bi-github:hover {
-  color: black;
+.social-media{
+  font-size: large;
+  text-decoration: none;
 }
-.bi-envelope-fill:hover {
-  color: crimson;
-}
-img {
+
+.my-picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
+/* MOBILE RESPONSVE */
+
 @media only screen and (max-width: 425px) {
+  
   .main {
     margin-top: 150px;
     flex-direction: column;
     align-items: center;
+  }
+
+  ul{
+    flex-direction: column;
   }
 }
